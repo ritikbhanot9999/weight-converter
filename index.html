@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+  <title>Ritik Weight Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Weight Converter</h1>
+    <div class="input-group">
+      <label for="value">Value</label>
+      <input type="number" class="value" id="value" placeholder="Enter weight value" step="0.01">
+    </div>
+    <div class="input-group">
+      <label for="fromUnit">From Unit</label>
+      <select id="fromUnit">
+        <option value="kg">Kilograms (kg)</option>
+        <option value="1b">Pounds (lb)</option>
+        <option value="oz">Ounces (oz)</option>
+        <option value="g">Grams (g)</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label for="toUnit">To Unit</label>
+      <select id="toUnit">
+        <option value="1b">Pounds (lb)</option>
+        <option value="kg">Kilograms (kg)</option>
+        <option value="oz">Ounces (oz)</option>
+        <option value="g">Grams (g)</option>
+      </select>
+    </div>
+    <button onclick="convertWeight()">Convert</button>
+    <div class="result" id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
